@@ -19,7 +19,7 @@ export const CheckoutForm = () => {
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "https://lavender-fields-kfcn.onrender.com/stripe/charge",
+          "https://lavender-fields-backend-mn5l.onrender.com/stripe/charge",
           {
             amount: 999,
             id: id,
